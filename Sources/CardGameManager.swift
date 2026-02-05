@@ -167,13 +167,14 @@ final class CardGameManager {
                 return
             }
 
-            handleWar()
+            handleWar(tiedRank: c1.rank)
             printScore()
             print("")
         }
 
-        private func handleWar() {
-            print("War! Each player plays 3 cards face down...")
+        private func handleWar(tiedRank: Rank) {
+            print("War! Both played \(tiedRank.name)!")
+            print("Each player plays 3 cards face down...")
 
             while true {
                 if player1.hand.count < 4 {
