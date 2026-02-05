@@ -226,8 +226,9 @@ final class CardGameManager {
         print("Card Game: War")
         print("=================\n")
 
-        let player1 = HumanPlayer(name: "Alice")
-        let player2 = AIPlayer(name: "Bob")
+        // Bien évidemment, le résultat ne sera pas forcément réaliste : Ynov gagne toujours.
+        let player1 = HumanPlayer(name: "Sascha Salles")
+        let player2 = AIPlayer(name: "Staff Ynov")
 
         let game = Game(player1: player1, player2: player2)
         game.play()
